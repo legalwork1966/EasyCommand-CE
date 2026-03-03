@@ -4,6 +4,11 @@
 Designed and programmed by Anthony W. Marinello  
 
 ---
+## Disclaimer
+⚠️ This software drafts system commands for review. 
+The user is fully responsible for reviewing and approving any command before execution.
+
+This software is provided "AS IS" under the MIT License with no warranty or liability.
 
 ## Overview
 
