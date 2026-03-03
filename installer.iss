@@ -9,9 +9,11 @@ OutputBaseFilename=EasyCommand-CE-Setup
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
+LicenseFile=EULA.txt
 
 [Files]
 Source: "publish\win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: "*.pdb"
+Source: "EULA.txt"; DestDir: "{app}"; Flags: ignoreversion
 
 
 [Icons]

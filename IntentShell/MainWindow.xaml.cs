@@ -37,9 +37,45 @@ public partial class MainWindow : Window
 
     // ── Init ──────────────────────────────────────────────────────────────────
 
+
+private bool CheckEula()
+{
+    string appData = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+        "EasyCommand");
+
+    Directory.CreateDirectory(appData);
+
+    string acceptedFlag = Path.Combine(appData, "eula.accepted");
+    if (File.Exists(acceptedFlag))
+        return true;
+
+    // Load EULA text from install directory (same folder as EasyCommand.exe)
+    string eulaPath = Path.Combine(AppContext.BaseDirectory, "EULA.txt");
+    string eulaText =
+        File.Exists(eulaPath)
+            ? File.ReadAllText(eulaPath)
+            : "EULA.txt was not found. Please reinstall the application.";
+
+    var dlg = new IntentShell.EulaWindow(eulaText, this);
+    bool? accepted = dlg.ShowDialog();
+
+    if (accepted == true)
+    {
+        File.WriteAllText(acceptedFlag, "accepted");
+        return true;
+    }
+
+    return false;
+}
     private void MainWindow_ContentRendered(object? sender, EventArgs e)
     {
         ContentRendered -= MainWindow_ContentRendered;
+        if (!CheckEula())
+        {
+            Application.Current.Shutdown();
+            return;
+        }
 
         try
         {
@@ -327,7 +363,7 @@ public partial class MainWindow : Window
 
     private void CancelBtn_Click(object sender, RoutedEventArgs e)
     {
-        try { _cts?.Cancel(); } catch (ObjectDisposedException) { }
+        _cts?.Cancel();
         SetStatus("Canceling…");
     }
 
@@ -364,21 +400,13 @@ public partial class MainWindow : Window
 
                 process.OutputDataReceived += (_, ev) =>
                 {
-                    try
-                    {
-                        if (ev.Data is null) outDone.Set();
-                        else outBuf.AppendLine(ev.Data);
-                    }
-                    catch (ObjectDisposedException) { }
+                    if (ev.Data is null) outDone.Set();
+                    else outBuf.AppendLine(ev.Data);
                 };
                 process.ErrorDataReceived += (_, ev) =>
                 {
-                    try
-                    {
-                        if (ev.Data is null) errDone.Set();
-                        else errBuf.AppendLine(ev.Data);
-                    }
-                    catch (ObjectDisposedException) { }
+                    if (ev.Data is null) errDone.Set();
+                    else errBuf.AppendLine(ev.Data);
                 };
 
                 try

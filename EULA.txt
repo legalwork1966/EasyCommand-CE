@@ -1,0 +1,52 @@
+END USER LICENSE AGREEMENT (EULA) Easy Command – Professional Edition ©
+2019–2026 Starlight IT Solutions Designed and Programmed by Anthony W.
+Marinello
+
+1.  License Grant This software (“Software”) is licensed, not sold. Upon
+    purchase, you are granted a non-exclusive, non-transferable license
+    to install and use the Software on your personal or business
+    computers. Ownership of the Software and all intellectual property
+    rights remain with the developer.
+
+2.  User-Supplied API Key Requirement This Software requires the user to
+    supply their own valid OpenAI API key. The developer does NOT
+    provide API access, does NOT resell API services, does NOT include
+    API usage in the purchase price, and is NOT responsible for any API
+    fees or charges. All API usage and billing are handled directly
+    between the user and OpenAI. The Software is not affiliated with,
+    endorsed by, or sponsored by OpenAI.
+
+3.  Command Execution Responsibility This Software generates drafted
+    system commands based on user input. The user must review all
+    commands before execution and assumes full responsibility for
+    executing any command. The developer is not responsible for system
+    damage, data loss, security compromise, business interruption,
+    infrastructure impact, or any indirect or consequential damages. Use
+    at your own risk.
+
+4.  No Warranty The Software is provided “AS IS” without warranty of any
+    kind, express or implied. The developer makes no guarantees
+    regarding accuracy of generated commands, fitness for a particular
+    purpose, compatibility with all systems, or continuous
+    functionality.
+
+5.  Limitation of Liability To the maximum extent permitted by law, the
+    developer’s total liability for any claim arising out of or relating
+    to the Software shall not exceed the amount paid for the license.
+    Under no circumstances shall the developer be liable for indirect,
+    incidental, special, or consequential damages.
+
+6.  Prohibited Uses You may not reverse engineer or redistribute the
+    Software, use the Software for unlawful activity, or
+    resell/sublicense the Software without written permission.
+
+7.  Termination This license may be terminated if you violate the terms
+    of this agreement. Upon termination, you must cease use and delete
+    all copies.
+
+8.  Governing Law This Agreement shall be governed by the laws of the
+    State of Ohio, United States, without regard to conflict of law
+    principles.
+
+9.  Entire Agreement This Agreement constitutes the entire agreement
+    between the user and the developer regarding the Software.
