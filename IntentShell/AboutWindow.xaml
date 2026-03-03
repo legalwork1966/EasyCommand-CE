@@ -1,0 +1,46 @@
+<Window x:Class="IntentShell.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False">
+
+    <Border Background="#FFFFFF" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="18">
+        <Grid Width="520">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel>
+                <TextBlock Text="Easy Command" FontSize="22" FontWeight="SemiBold"/>
+                <TextBlock Text="Natural language → approved Windows command" Foreground="{StaticResource SubtleTextBrush}" Margin="0,2,0,0"/>
+            </StackPanel>
+
+            <Border Grid.Row="1" Margin="0,14,0,12" Background="#F6F7F9" CornerRadius="8" Padding="12">
+                <StackPanel>
+                     <TextBlock Text="© 2019–2026 Starlight IT Solutions" Foreground="{StaticResource SubtleTextBrush}"/>
+                    <TextBlock Text="Designed and programmed by" Foreground="{StaticResource SubtleTextBrush}"/>
+                    <TextBlock Text="Anthony W. Marinello" FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                    <TextBlock Text="Released under the MIT License." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                    <TextBlock Text="This edition requires a user-supplied OpenAI API key." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                    <TextBlock Text="contact@starlightitsol.com" FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <StackPanel Grid.Row="2">
+                <TextBlock x:Name="VersionText"/>
+                <TextBlock x:Name="BuildDateText" Margin="0,2,0,0"/>
+                <TextBlock x:Name="OSText" Margin="0,2,0,0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,18,0,0">
+                <Button Content="OK" Width="90" Style="{StaticResource PrimaryButton}" IsDefault="True" Click="OkBtn_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

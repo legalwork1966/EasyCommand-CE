@@ -1,0 +1,19 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# VS / Rider
+.vs/
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Local config / secrets
+**/appsettings.Development.json
+**/secrets.json
+
+# Packages (optional)
+packages/
