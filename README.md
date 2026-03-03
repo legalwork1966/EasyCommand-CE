@@ -45,7 +45,7 @@ Navigate to the project directory containing the `.csproj` file and run:
 dotnet restore
 dotnet build -c Release
 
+
 ## Interface
 
 ![Main Window](docs/images/main-window.png)
-![Easy Command Banner](docs/images/main-window.png)
