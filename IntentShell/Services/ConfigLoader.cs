@@ -46,7 +46,7 @@ string apiKey =
     ?? (config["OpenAI:ApiKey"] ?? string.Empty).Trim();
 
 string model = (config["OpenAI:Model"] ?? "gpt-4o-mini").Trim();
-string defaultPrompt = (config["OpenAI:DefaultPrompt"] ?? string.Empty).Trim();
+string defaultPrompt = (config["OpenAI:DefaultPrompt"] ?? "Tell me what you want the powershell or windows command to do.").Trim();
 
 // IMPORTANT: match your AppConfig parameter order
 return new AppConfig(apiKey, model, defaultPrompt);

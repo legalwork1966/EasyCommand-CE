@@ -7,7 +7,7 @@
         <Color x:Key="AccentColor">#0078D4</Color>
         <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
 
-        <Color x:Key="AppBgColor">#F6F7F9</Color>
+        <Color x:Key="AppBgColor">#E8E9EC</Color>
         <SolidColorBrush x:Key="AppBgBrush" Color="{StaticResource AppBgColor}"/>
 
         <Color x:Key="BorderColor">#E3E6EA</Color>

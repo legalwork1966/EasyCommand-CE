@@ -1,4 +1,4 @@
-<Window x:Class="EasyCommand.AboutWindow"
+<Window x:Class="EasyCommand.AboutWindowMIT"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="About"
@@ -28,6 +28,7 @@
                     <TextBlock Text="Anthony W. Marinello" FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
                     <TextBlock Text="This edition requires a user-supplied OpenAI API key." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
                     <TextBlock Text="contact@starlightitsol.com" FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                     <TextBlock Text="Released under the MIT License." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
                 </StackPanel>
             </Border>
 

@@ -64,6 +64,8 @@ public partial class MainWindow : Window
             _chatClient = new ChatClient(_cfg.Model, apiKey);
 
             PromptInput.Text = _cfg.DefaultPrompt;
+            PromptInput.Focus();
+            PromptInput.SelectAll();
             DraftBtn.IsEnabled = true;
             RunBtn.IsEnabled   = !string.IsNullOrWhiteSpace(PlanBox.Text);
 
@@ -325,7 +327,7 @@ public partial class MainWindow : Window
 
     private void CancelBtn_Click(object sender, RoutedEventArgs e)
     {
-        _cts?.Cancel();
+        try { _cts?.Cancel(); } catch (ObjectDisposedException) { }
         SetStatus("Canceling…");
     }
 
@@ -362,13 +364,21 @@ public partial class MainWindow : Window
 
                 process.OutputDataReceived += (_, ev) =>
                 {
-                    if (ev.Data is null) outDone.Set();
-                    else outBuf.AppendLine(ev.Data);
+                    try
+                    {
+                        if (ev.Data is null) outDone.Set();
+                        else outBuf.AppendLine(ev.Data);
+                    }
+                    catch (ObjectDisposedException) { }
                 };
                 process.ErrorDataReceived += (_, ev) =>
                 {
-                    if (ev.Data is null) errDone.Set();
-                    else errBuf.AppendLine(ev.Data);
+                    try
+                    {
+                        if (ev.Data is null) errDone.Set();
+                        else errBuf.AppendLine(ev.Data);
+                    }
+                    catch (ObjectDisposedException) { }
                 };
 
                 try
