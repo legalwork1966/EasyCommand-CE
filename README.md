@@ -1,4 +1,3 @@
-TEST-README-UPDATE
 # Easy Command – Community Edition
 
 © 2019–2026 Starlight IT Solutions  
