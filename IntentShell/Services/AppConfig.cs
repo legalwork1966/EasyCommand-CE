@@ -1,4 +1,4 @@
-namespace IntentShell.Services;
+namespace EasyCommand.Services;
 
 public sealed record AppConfig(
     string ApiKey,

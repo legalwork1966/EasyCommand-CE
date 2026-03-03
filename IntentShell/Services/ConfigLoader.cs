@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using System;
-using IntentShell.Services; // add at top of file
-namespace IntentShell.Services;
+using EasyCommand.Services; // add at top of file
+namespace EasyCommand.Services;
 
 
 public static class ConfigLoader

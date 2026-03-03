@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using System.Windows;
 
-namespace IntentShell;
+namespace EasyCommand;
 
 public partial class AboutWindow : Window
 {

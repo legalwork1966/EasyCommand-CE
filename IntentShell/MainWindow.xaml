@@ -1,4 +1,4 @@
-<Window x:Class="IntentShell.MainWindow"
+<Window x:Class="EasyCommand.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Easy Command"

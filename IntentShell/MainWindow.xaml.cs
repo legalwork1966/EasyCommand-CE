@@ -1,13 +1,13 @@
-ï»¿using OpenAI.Chat;
+using OpenAI.Chat;
 using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.Win32;
-using IntentShell.Services;
+using EasyCommand.Services;
 
-namespace IntentShell;
+namespace EasyCommand;
 
 public partial class MainWindow : Window
 {
@@ -114,7 +114,7 @@ public partial class MainWindow : Window
     {
         if (_chatClient is null)
         {
-            MessageBox.Show("API key not configured. Use File â†’ Set API Key.", "Not Ready",
+            MessageBox.Show("API key not configured. Use File ? Set API Key.", "Not Ready",
                 MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
@@ -180,7 +180,7 @@ public partial class MainWindow : Window
     {
         if (_chatClient is null)
         {
-            MessageBox.Show("API key not configured. Use File â†’ Set API Key.", "Not Ready",
+            MessageBox.Show("API key not configured. Use File ? Set API Key.", "Not Ready",
                 MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
@@ -393,10 +393,10 @@ public partial class MainWindow : Window
     {
         MessageBox.Show(
             "Keyboard shortcuts:\n\n" +
-            "â€¢ Ctrl+Enter  Draft\n" +
-            "â€¢ F5         Run\n" +
-            "â€¢ Ctrl+S     Save script\n" +
-            "â€¢ Ctrl+L     Clear\n",
+            "• Ctrl+Enter  Draft\n" +
+            "• F5         Run\n" +
+            "• Ctrl+S     Save script\n" +
+            "• Ctrl+L     Clear\n",
             "Keyboard Shortcuts",
             MessageBoxButton.OK,
             MessageBoxImage.Information);

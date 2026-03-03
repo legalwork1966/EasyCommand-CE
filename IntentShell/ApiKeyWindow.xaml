@@ -1,4 +1,4 @@
-<Window x:Class="IntentShell.ApiKeyWindow"
+<Window x:Class="EasyCommand.ApiKeyWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="API Key Required"

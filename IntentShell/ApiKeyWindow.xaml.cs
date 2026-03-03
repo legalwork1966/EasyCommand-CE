@@ -1,7 +1,7 @@
 using System;
 using System.Windows;
 
-namespace IntentShell;
+namespace EasyCommand;
 
 public partial class ApiKeyWindow : Window
 {

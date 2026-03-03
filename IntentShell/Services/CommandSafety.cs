@@ -1,7 +1,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace IntentShell.Services;
+namespace EasyCommand.Services;
 
 public static class CommandSafety
 {

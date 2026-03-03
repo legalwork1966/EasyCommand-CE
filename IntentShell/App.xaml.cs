@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace IntentShell;
+namespace EasyCommand;
 
 public partial class App : Application
 {

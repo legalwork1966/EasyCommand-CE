@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace IntentShell.Services;
+namespace EasyCommand.Services;
 
 public static class ApiKeyStore
 {

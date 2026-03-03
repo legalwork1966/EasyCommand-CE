@@ -44,3 +44,10 @@ Navigate to the project directory containing the `.csproj` file and run:
 ```powershell
 dotnet restore
 dotnet build -c Release
+
+
+## Interface
+
+---
+
+![Main Window](docs/images/main-window.png)

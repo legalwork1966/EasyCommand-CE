@@ -16,7 +16,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore
-        run: dotnet restore "IntentShell/IntentShell.sln"
+        run: dotnet restore "IntentShell/EasyCommand.sln"
 
       - name: Build
-        run: dotnet build "IntentShell/IntentShell.sln" -c Release --no-restore
+        run: dotnet build "IntentShell/EasyCommand.sln" -c Release --no-restore

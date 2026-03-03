@@ -1,12 +1,12 @@
 $ErrorActionPreference = "Stop"
 
-Write-Host "=== Easy Command (IntentShell) Build ==="
+Write-Host "=== Easy Command (EasyCommand) Build ==="
 
 if (-not (Get-Command dotnet -ErrorAction SilentlyContinue)) {
   throw ".NET SDK not found. Install .NET 8 SDK first."
 }
 
-dotnet restore "IntentShell/IntentShell.sln"
-dotnet build "IntentShell/IntentShell.sln" -c Release
+dotnet restore "IntentShell/EasyCommand.sln"
+dotnet build "IntentShell/EasyCommand.sln" -c Release
 
 Write-Host "Build complete." 
