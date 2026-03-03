@@ -17,3 +17,10 @@ Desktop.ini
 
 # Packages (optional)
 packages/
+
+#Ignore
+publish/
+dist/
+installer_output/
+*.exe
+*.pdb

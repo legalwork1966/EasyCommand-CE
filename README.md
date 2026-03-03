@@ -4,7 +4,7 @@
 Designed and programmed by Anthony W. Marinello  
 
 ---
-## Disclaimer
+# Disclaimer
 ⚠️ This software drafts system commands for review. 
 The user is fully responsible for reviewing and approving any command before execution.
 
