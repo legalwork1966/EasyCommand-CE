@@ -48,3 +48,4 @@ dotnet build -c Release
 ## Interface
 
 ![Main Window](docs/images/main-window.png)
+![Easy Command Banner](docs/images/main-window.png)
