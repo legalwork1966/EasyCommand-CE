@@ -48,4 +48,6 @@ dotnet build -c Release
 
 ## Interface
 
+---
+
 ![Main Window](docs/images/main-window.png)
