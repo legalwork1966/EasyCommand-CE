@@ -29,7 +29,7 @@
                     <PasswordBox x:Name="KeyBox" Margin="0,8,0,0" Padding="10,8" FontFamily="Consolas" FontSize="13"/>
                     <DockPanel Margin="0,10,0,0">
                         <CheckBox x:Name="ShowKeyChk" Content="Show key" VerticalAlignment="Center" Checked="ShowKeyChk_Checked" Unchecked="ShowKeyChk_Unchecked"/>
-                        <TextBlock DockPanel.Dock="Right" Foreground="{StaticResource SubtleTextBrush}" VerticalAlignment="Center" Text="You can change this later in Windows Environment Variables."/>
+                        <TextBlock DockPanel.Dock="Right" Foreground="{StaticResource SubtleTextBrush}" VerticalAlignment="Center" Text=" You can change this later in Windows Environment Variables."/>
                     </DockPanel>
 
                     <!-- Visible textbox only when ShowKeyChk is enabled -->
