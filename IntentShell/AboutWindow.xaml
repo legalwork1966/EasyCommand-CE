@@ -28,7 +28,9 @@
                     <TextBlock Text="Anthony W. Marinello" FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
                     <TextBlock Text="This edition requires a user-supplied OpenAI API key." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
                     <TextBlock Text="contact@starlightitsol.com" FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
-                    <TextBlock Text="Easy Command is an independent utility and is not affiliated with OpenAI." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                    <TextBlock Text="Easy Command is an independent utility" FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                    <TextBlock Text="and is not affiliated with OpenAI." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
+                    <TextBlock Text="Released under the MIT License." FontSize="16" FontWeight="SemiBold" Margin="0,2,0,0"/>
                 </StackPanel>
             </Border>
 

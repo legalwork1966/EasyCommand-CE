@@ -68,10 +68,24 @@ private bool CheckEula()
 
     return false;
 }
+    private bool CheckStartupWarning()
+    {
+        var dlg = new IntentShell.StartupWarningWindow();
+        dlg.Owner = this;
+        bool? accepted = dlg.ShowDialog();
+        return accepted == true;
+    }
+
     private void MainWindow_ContentRendered(object? sender, EventArgs e)
     {
         ContentRendered -= MainWindow_ContentRendered;
         if (!CheckEula())
+        {
+            Application.Current.Shutdown();
+            return;
+        }
+
+        if (!CheckStartupWarning())
         {
             Application.Current.Shutdown();
             return;
@@ -309,6 +323,20 @@ private bool CheckEula()
         {
             MessageBox.Show("No command to run. Please draft a command first.", "No Command",
                 MessageBoxButton.OK, MessageBoxImage.Warning);
+            return;
+        }
+
+        // General safety warning for all commands
+        var generalWarning = MessageBox.Show(
+            "Executing PowerShell and Windows commands can be dangerous.\n\n" +
+            "Are you sure you want to proceed?",
+            "Security Warning",
+            MessageBoxButton.YesNo,
+            MessageBoxImage.Warning);
+
+        if (generalWarning != MessageBoxResult.Yes)
+        {
+            SetStatus("Canceled");
             return;
         }
 
