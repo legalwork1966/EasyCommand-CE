@@ -1,6 +1,6 @@
 # Easy Command – Community Edition
 ![Main Window](IntentShell/docs/images/main-window.png)
-
+![Main Window](IntentShell/docs/images/main-window2.png)
 © 2019–2026 Starlight IT Solutions  
 Designed and programmed by Anthony W. Marinello  
 
