@@ -55,4 +55,4 @@ dotnet build -c Release
 
 ---
 
-![Main Window](docs/images/main-window.png)
+![Main Window](IntentShell/docs/images/main-window.png)
