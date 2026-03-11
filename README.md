@@ -1,4 +1,5 @@
 # Easy Command – Community Edition
+![Main Window](IntentShell/docs/images/main-window.png)
 
 © 2019–2026 Starlight IT Solutions  
 Designed and programmed by Anthony W. Marinello  
@@ -53,5 +54,5 @@ dotnet build -c Release
 
 ## Interface
 
-![Main Window](IntentShell/docs/images/main-window.png)
+
 
